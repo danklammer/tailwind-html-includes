@@ -10,8 +10,9 @@ Sometimes you just want to build a static page with Tailwind, but without the ex
 ## Features
 - Embedded Tailwind CSS in the `<head>`
 - HTML Includes with the ability to [pass parameters](https://github.com/entozoon/html-includes#use) + nesting
-- Dev Server with Watch suppport
-- Minify all the things (HTML/CSS/JS) into one single HTML file on build
+  - e.g. `<script>${require('./_scripts.js')}</script>`
+- Dev server with _Watch_ suppport
+- Minify all the things (HTML/CSS/JS) into [one single HTML file](https://gist.githubusercontent.com/danklammer/7c393add2cc558e0393d2368655d464d/raw/ec3a70ea04ae9991980448a8f18bbce617c8efb1/index.html) on build
 
 
 ## NPM Scripts
