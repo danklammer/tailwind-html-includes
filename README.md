@@ -22,14 +22,14 @@ Sometimes you just want to build a static page with Tailwind, but without the ex
 npm install
 ```
 
-#### Develop
+#### Develop / Serve / Watch
 ```
 npm run serve
 ```
 Open your page on [localhost:8080](http://localhost:8080/).
 
 
-#### Build/Deploy
+#### Build / Deploy
 ```
 npm run build
 ```
