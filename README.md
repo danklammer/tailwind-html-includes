@@ -1,4 +1,4 @@
-# A simple Tailwind CSS + HTML Includes builder
+# A simple Tailwind CSS + HTML Includes page builder
 
 Sometimes you just want to build a static page with Tailwind, but without the extra bloat
 
@@ -11,7 +11,7 @@ Sometimes you just want to build a static page with Tailwind, but without the ex
 - Embedded Tailwind CSS in the `<head>`
 - HTML Includes with the ability to [pass parameters](https://github.com/entozoon/html-includes#use) + nesting
 - Dev Server with Watch suppport
-- Minify all the things (HTML/CSS/JS) on build
+- Minify all the things (HTML/CSS/JS) into one single HTML file on build
 
 
 ## NPM Scripts
