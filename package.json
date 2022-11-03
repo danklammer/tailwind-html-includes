@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-html-includes",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css && html-includes --src src --dest dist --minify minifyJS=true",
+    "serve": "servor dist --reload --browse & npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --watch & html-includes --src src --dest dist --watch"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "html-includes": "^4.4.1",
+    "servor": "^4.0.2",
+    "tailwindcss": "^3.2.1"
+  }
+}
