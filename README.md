@@ -1,6 +1,6 @@
 # A simple Tailwind CSS + HTML Includes page builder
 
-Sometimes you just want to build a static page with Tailwind, but without the extra bloat
+Build a single static page with your Tailwind CSS and JavaScript embedded
 
 #### NPM Packages Used
 - [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS framework for rapid UI development
