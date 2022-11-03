@@ -2,7 +2,7 @@
 
 Sometimes you just want to build a static page with Tailwind, but without the extra bloat
 
-### NPM Packages Used
+#### NPM Packages Used
 - [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) - A utility-first CSS framework for rapid UI development
 - [HTML Includes](https://github.com/entozoon/html-includes) - HTML compilation with partial includes and minification
 - [Servor](https://github.com/lukejacksonn/servor) - A dependency-free dev server for modern web application development
@@ -16,19 +16,19 @@ Sometimes you just want to build a static page with Tailwind, but without the ex
 
 ## NPM Scripts
 
-**Install**  
+#### Install
 ```
-npm run install
+npm install
 ```
 
-**Develop**  
+#### Develop
 ```
 npm run serve
 ```
 Open your page on [localhost:8080](http://localhost:8080/).
 
 
-**Build/Deploy**  
+#### Build/Deploy
 ```
 npm run build
 ```
