@@ -1,10 +1,11 @@
 {
   "name": "tailwind-html-includes",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Tailwind CSS + HTML Includes builder",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css && html-includes --src src --dest dist --minify minifyJS=true",
-    "serve": "servor dist --reload --browse & npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --watch & html-includes --src src --dest dist --watch"
+    "make_dist": "rm -rf /dist/ ; cp -r ./src/. ./dist ; rm ./dist/_*.*",
+    "build": "npm run make_dist && npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css && html-includes --src src --dest dist --minify minifyJS=true",
+    "serve": "npm run make_dist ; sleep 1 && servor dist --reload --browse & npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --watch & html-includes --src src --dest dist --watch"
   },
   "license": "MIT",
   "devDependencies": {
