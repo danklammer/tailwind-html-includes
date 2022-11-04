@@ -8,7 +8,7 @@ Build a single static page with your Tailwind CSS and JavaScript embedded
 - [Servor](https://github.com/lukejacksonn/servor) - A dependency-free dev server for modern web application development
 
 ## Features
-- Embedded Tailwind CSS in the `<head>`
+- Embedded Tailwind CSS within `<style>`
 - HTML Includes with the ability to [pass parameters](https://github.com/entozoon/html-includes#use) + nesting
   - e.g. `<script>${require('./_scripts.js')}</script>`
 - Dev server with _Watch_ suppport
