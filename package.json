@@ -4,7 +4,7 @@
   "description": "A simple Tailwind CSS + HTML Includes builder",
   "scripts": {
     "make_dist": "rm -rf /dist/ ; cp -r ./src/. ./dist ; rm ./dist/_*.*",
-    "build": "npm run make_dist && npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css && html-includes --src src --dest dist --minify minifyJS=true",
+    "build": "npm run make_dist && npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --minify && html-includes --src src --dest dist --minify minifyJS=true",
     "serve": "npm run make_dist ; sleep 1 && servor dist --reload --browse & npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --watch & html-includes --src src --dest dist --watch"
   },
   "license": "MIT",
