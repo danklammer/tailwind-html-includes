@@ -15,7 +15,9 @@
   },
   "overrides": {
     "html-includes": {
-      "loader-utils": "^1.4.2"
+      "html-loader": "^5.0.0",
+      "loader-utils": "^1.4.2",
+      "shelljs": "^0.8.5"
     }
   }
 }
