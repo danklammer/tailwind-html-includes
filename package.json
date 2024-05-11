@@ -3,19 +3,21 @@
   "version": "1.0.0",
   "description": "A simple Tailwind CSS + HTML Includes builder",
   "scripts": {
-    "make_dist": "rm -rf /dist/ ; cp -r ./src/. ./dist ; rm ./dist/_*.*",
-    "build": "npm run make_dist && npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --minify && html-includes --src src --dest dist --minify minifyJS=true",
-    "serve": "npm run make_dist ; sleep 1 && servor dist --reload --browse & npx tailwindcss -i ./src/_tailwind.css -o ./src/_styles.css --watch & html-includes --src src --dest dist --watch"
+    "make_dist": "rm -rf ./dist/ ; cp -r ./src/. ./dist ; node bin/cleanup.js",
+    "build": "npm run make_dist && html-includes --src src --dest dist --minify minifyJS=true && node bin/inline-styles.js",
+    "serve": "npm run make_dist ; sleep 1 && servor dist --reload --browse & npx tailwindcss -i ./src/_includes/css/tailwind.css -o ./dist/styles.css --watch & html-includes --src src --dest dist --watch"
   },
   "license": "MIT",
   "devDependencies": {
     "html-includes": "^5.0.0",
     "servor": "^4.0.2",
-    "tailwindcss": "^3.3.3"
+    "tailwindcss": "^3.4.3"
   },
   "overrides": {
     "html-includes": {
-      "loader-utils": "^1.4.2"
+      "html-loader": "^5.0.0",
+      "loader-utils": "^1.4.2",
+      "shelljs": "^0.8.5"
     }
   }
 }
